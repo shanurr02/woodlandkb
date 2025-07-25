@@ -1,11 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export', // enables static export
-  distDir: 'docs',  // GitHub Pages uses this folder by default
+  output: 'export',
+  distDir: 'docs',
+  basePath: '/woodlandkb',       // Required for GitHub Pages
   images: {
-    unoptimized: true, // if you're using <Image />
-  },
-  // basePath: '/your-repo-name', // optional, required if not root domain
+    unoptimized: true            // Required if you're using next/image
+  }
 };
 
 module.exports = nextConfig;
